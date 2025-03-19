@@ -1,0 +1,28 @@
+@import url(./utils/variables.css);
+
+
+
+@import url(./base/common.css);
+@import url(./base/container.css);
+@import url(./base/section.css);
+@import url(./base/animation-scroll.css);
+
+
+
+@import url(./layout/header.css);
+
+@import url(./layout/index/hero.css);
+@import url(./layout/index/ai-and-healthcare.css);
+@import url(./layout/index/ai-reshapes-healthcare.css);
+@import url(./layout/index/one-mission.css);
+@import url(./layout/index/fortm.css);
+@import url(./layout/index/provider-led.css);
+@import url(./layout/index/ai-agents.css);
+@import url(./layout/index/why-now.css);
+@import url(./layout/index/join-waitlist.css);
+@import url(./layout/index/bill-providers.css);
+@import url(./layout/index/ai-taking-in-healthcare.css);
+@import url(./layout/index/backed-by-providers.css);
+@import url(./layout/index/join-growing.css);
+
+@import url(./layout/footer.css);

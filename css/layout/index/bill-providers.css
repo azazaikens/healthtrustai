@@ -1,0 +1,101 @@
+.bill-providers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bill-providers h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+
+    margin-bottom: 40px;
+}
+
+.bill-providers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.bill-providers-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 344px;
+    width: 100%;
+
+    background-color: var(--white-color);
+}
+
+.bill-providers-list img {
+    margin-bottom: 16px;
+}
+
+.bill-providers-list-iten-text {
+    box-sizing: border-box;
+    
+    max-width: 344px;
+    width: 100%;
+    
+    padding: 0 24px;
+}
+
+.bill-providers-list-iten-text h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+@media screen and (min-width: 375px) {
+    
+}
+
+
+@media screen and (min-width: 768px) {
+    
+}
+
+
+@media screen and (min-width: 1280px) {
+    .bill-providers h2 {
+        font-size: 36px;
+        line-height: 44px;
+
+        margin-bottom: 80px;
+    }
+
+    .bill-providers-list {
+        gap: 1px;
+        background-color: var(--border-color);
+        justify-content: space-between;
+    }
+
+    .bill-providers-list li {
+        max-width: 426px;
+    }
+
+    .bill-providers-list li:nth-child(-n+3) {
+        padding-bottom: 24px;
+    }
+    
+    .bill-providers-list li:nth-last-child(-n+3) {
+        padding-top: 24px;
+    
+    }
+
+    .bill-providers-list img {
+        margin-bottom: 24px;
+    }
+
+    .bill-providers-list-iten-text {
+        margin: 0 32px 24px;
+    }
+
+
+}

@@ -1,0 +1,83 @@
+.ai-reshapes-healthcare {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 64px 16px;
+}
+
+.ai-reshapes-healthcare-text {
+    box-sizing: border-box;
+    
+    max-width: 704px;
+    width: 100%;
+
+    padding: 0 16px;
+    
+    text-align: center;
+}
+
+.ai-reshapes-healthcare h2 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 40px;
+
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.ai-reshapes-healthcare p {
+    font-size: 18px;
+    line-height: 150%;
+
+    margin-bottom: 40px;
+}
+
+.ai-reshapes-healthcare span {
+    position: relative;
+    z-index: 2;
+}
+
+.ai-reshapes-healthcare a.__gradient::before {
+    inset: 0px -16px;
+    filter: blur(20px);
+    opacity: 0.5;
+    background: linear-gradient(
+      to right,
+      #71C9FF 0%,
+      #0340E2 23%,
+      #4507EC 49%,
+      #5400E6 74%,
+      #B69BFF 100%
+    );
+}
+
+
+@media screen and (min-width: 375px) {
+}
+
+
+@media screen and (min-width: 768px) {
+    .ai-reshapes-healthcare-text {
+        padding: 0;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .ai-reshapes-healthcare {
+    padding: 168px 16px;
+    }
+
+    .ai-reshapes-healthcare h2 {
+    font-size: 36px;
+    line-height: 44px;
+    }
+
+    .ai-reshapes-healthcare p {
+    font-size: 20px;
+    line-height: 30px;
+    }
+
+}

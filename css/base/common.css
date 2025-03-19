@@ -1,0 +1,303 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+body {
+    margin: 0;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 400;
+    color: var(--subtitle-color);
+    overflow-x: hidden;
+}
+
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+
+    color: var(--header-black-color);
+} 
+
+p {
+    line-height: 1.5;
+}
+
+ul,
+ol {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+body.active {
+    overflow: hidden;
+}
+
+
+[class="__header-text-p"] {
+    font-size: 18px;
+    line-height: 150%;
+}
+
+[class="__text-p-ul"] {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+
+[class*="__italic"] {
+    font-style: italic;
+}
+
+[class*="__img"] {
+    width: 100%;
+
+    object-fit: cover;
+}
+
+[class*="__button-link"] {
+    display: inline-block;
+
+    padding: 10px 28px;
+
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+
+    border-radius: 12px;
+
+}
+
+[class*="__darck-color"] {
+    position: relative;
+    
+    background: var(--header-black-color);
+    color: var(--white-color);
+    fill: var(--white-color);
+    opacity: 1;
+    /* overflow: hidden; */
+}
+
+
+
+[class*="__darck-color"] > span {
+    position: relative;
+    z-index: 1;
+}
+
+[class*="__darck-color"]::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 12px;
+    background: linear-gradient(to bottom right, #66BBFC, #AB89FC);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+[class*="__darck-color"]:hover::after {
+    opacity: 1;
+}
+
+
+
+[class*="__light-color"] {
+    position: relative;
+    
+    background-color: var(--white-color);
+    color: var(--header-black-color);
+    background: var(--white-color);
+    
+    border: 1px solid var(--header-black-color);
+
+    transition: border 0.5s linear, background-color 0.5s ease-out;
+}
+
+[class*="__light-color"]:hover {
+    border: 1px solid transparent;
+    background-color: #F3F6FC;
+}
+
+[class*="__light-color"]::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+
+    z-index: -1;
+    
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+
+    background: linear-gradient(to bottom right, #66BBFC, #AB89FC);
+    border-radius: 12px;
+
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+[class*="__light-color"]:hover::before {
+    opacity: 1;
+}
+
+[class*="__link"] {
+    position: relative;
+
+    transition: color 0.5s;
+}
+
+[class*="__link"]:hover, [class*="__link"]:focus {
+    color: #52525B;
+}
+
+[class*="__link"]::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: #52525B; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+[class*="__link"]:hover:after, [class*="__link"]:focus:after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: #52525B; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+[class*="__run-gradient"] {
+    position: relative;
+}
+
+[class*="__run-gradient"]::before {
+    content: '';
+    position: absolute;
+    inset: 35px;
+    z-index: -1;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #66BBFC, #418EF4, #4606EC, #7B3DF0, #AB89FC);
+    background-size: 300% 300%;
+    animation: gradientGlow 4s linear infinite;
+    filter: blur(64px);
+}
+
+@keyframes gradientGlow {
+    0% {
+        background-position: 0 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 80% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+[class*="__gradient"] {
+    position: relative;
+}
+[class*="__gradient"]::before {
+    content: '';
+    position: absolute;
+    inset: 24px 14px;
+    background: linear-gradient(
+      to right,
+      #66BBFC 0%,
+      #418EF4 23%,
+      #460EEC 49%,
+      #7B3DF0 74%,
+      #AB89FC 100%
+    );
+    border-radius: inherit;
+    /* background-size: 300% 300%; */
+    filter: blur(64px);
+    z-index: -1;
+}
+
+
+
+@media screen and (min-width: 375px) {
+}
+
+
+@media screen and (min-width: 768px) {
+
+    [class*="__button-link"] {
+        padding: 16px 28px;
+    }
+    [class="__header-text-p"] {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+}
+
+
+@media screen and (min-width: 1280px) {
+
+
+}

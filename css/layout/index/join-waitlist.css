@@ -1,0 +1,60 @@
+.join-waitlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding-top: 188px;
+    padding-bottom: 108px;
+}
+
+.join-waitlist h2 {
+    box-sizing: border-box;
+
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+
+    max-width: 770px;
+    width: 100%;
+
+    padding: 0 16px;
+
+    margin-bottom: 40px;
+}
+
+.join-waitlist a.__gradient::before {
+    inset: 0px -16px;
+    filter: blur(20px);
+    opacity: 0.5;
+    background: linear-gradient(
+      to right,
+      #71C9FF 0%,
+      #0340E2 23%,
+      #4507EC 49%,
+      #5400E6 74%,
+      #B69BFF 100%
+    );
+}
+
+@media screen and (min-width: 375px) {
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .join-waitlist h2 {
+        font-size: 36px;
+        line-height: 44px;
+        
+        padding: 0;
+        margin-bottom: 44px;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+}

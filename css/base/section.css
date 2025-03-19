@@ -1,0 +1,26 @@
+.section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.section-hero {
+    padding-top: 32px;
+    padding-bottom: 64px;
+}
+
+@media screen and (min-width: 375px) {
+}
+
+
+@media screen and (min-width: 768px) {
+}
+
+
+@media screen and (min-width: 1280px) {
+    .section-hero {
+    padding-top: 192px;
+    padding-bottom: 192px;
+    }
+    
+
+}

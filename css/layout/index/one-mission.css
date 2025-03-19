@@ -1,0 +1,106 @@
+.one-mission {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    background-color: var(--background-color);
+}
+
+.one-mission h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+
+    margin-bottom: 24px;
+}
+
+.one-mission-text {
+    align-self: flex-start;
+
+    max-width: 604px;
+    width: 100%;
+
+    height: auto;
+
+    margin-bottom: 40px;
+}
+
+
+.one-mission-text p:first-child {
+    margin-bottom: 30px;
+}
+
+.one-mission-values {
+    max-width: 604px;
+    width: 100%;
+}
+
+.one-mission-values-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+.one-mission-values-list li {
+    position: relative;
+    z-index: 2;
+}
+
+.one-mission-values-list li:nth-child(2) {
+    padding: 0;
+    outline: 0;
+    border-radius: 0;
+    z-index: 1;
+}
+
+.one-mission-values-list li div {
+    background-color: var(--white-color);
+
+    padding: 48px 32px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+}
+
+.one-mission-values-list li img {
+    margin-bottom: 32px;
+}
+
+.one-mission-values-list li h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    margin-bottom: 12px;
+}
+
+@media screen and (min-width: 375px) {
+}
+
+
+@media screen and (min-width: 768px) {
+
+}
+
+
+@media screen and (min-width: 1280px) {
+    .one-mission h2 {
+    font-size: 36px;
+    line-height: 44px;
+
+    margin-bottom: 32px;
+    }
+
+    .one-mission-text {
+    position: sticky;
+    top: 182px;
+
+    margin-bottom: 0;
+    }
+
+
+}
